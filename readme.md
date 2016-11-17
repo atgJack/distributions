@@ -9,12 +9,8 @@ A GoLang library providing statistics and sampling of probability distributions.
 
 - Normal
 - Exponential
-<<<<<<< HEAD
 - Uniform
 - Cauchy 
-=======
-- Uniform 
->>>>>>> bc0c65e... Added unform distribution. (#3)
 
 #### References
 
