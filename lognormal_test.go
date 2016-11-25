@@ -26,7 +26,7 @@ func Test_LogNormal(t *testing.T) {
       sample: sampleValues{
         mean:       12.18249396070347343807,
         variance:   255.0156343901585191873,
-        epsilon:    0.015,
+        epsilon:    0.03,
       },
     },
     distributionTest{

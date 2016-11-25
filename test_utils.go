@@ -107,7 +107,7 @@ func testValues(examples []distributionTest) error {
 
 func testSamples(dist Distribution, expected sampleValues) error {
   // Generate samples.
-  samples, err := dist.Sample(numSamples)
+  samples, err := Sample(dist, numSamples)
   if err != nil {
     return fmt.Errorf("\nCould not generate 1,000,000 samples.")
   }
