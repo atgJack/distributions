@@ -29,7 +29,7 @@ func Test_StudentsT(t *testing.T) {
       sample: sampleValues{
         mean:       0.0,
         variance:   1.25,
-        epsilon:    16.0,
+        epsilon:    1.0,
       },
     },
     // This is a Exponential distribution ;P
