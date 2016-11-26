@@ -28,7 +28,7 @@ func Sample(dist Distribution, n int) ([]float64, error) {
   for i := 0; i < n; i++ {
     value, err := dist.Random()
     if err != nil {
-      return []float64{}, nil
+      return []float64{}, err
     }
     result[i] = value
   }

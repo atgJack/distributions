@@ -14,7 +14,6 @@ type Poisson struct {
 }
 
 func (dist *Poisson) validate() error {
-  dist.Mu = math.Floor(dist.Mu)
   if dist.Mu <= 0 {
     return InvalidParamsError{ "Mu must be greater than zero." }
   }

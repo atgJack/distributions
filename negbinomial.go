@@ -101,11 +101,12 @@ func (dist NegBinomial) Random() (float64, error) {
   if err := dist.validate(); err != nil {
     return math.NaN(), err
   }
-  g, err := Gamma{ Shape: dist.Failures, Rate: 1.0 }.Random()
+  rate := (1.0 - dist.Prob) / dist.Prob
+  g, err := Gamma{ Shape: dist.Failures, Rate: rate }.Random()
   if err != nil {
     return math.NaN(), err
   }
-  p, err := Poisson{ Mu: g * (1.0 - dist.Prob) / dist.Prob }.Random()
+  p, err := Poisson{ Mu: g }.Random()
   if err != nil {
     return math.NaN(), err
   }
