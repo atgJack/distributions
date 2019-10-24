@@ -6,7 +6,7 @@ import (
 )
 
 //The Uniform Distribution is a continuous probability distribution
-// with parameters Min and Max, with Max < Min.
+// with parameters Min and Max, with Min < Max.
 //
 // See: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)
 type Uniform struct {
